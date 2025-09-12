@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sobia's Portfolio</title>
 
 <style>
@@ -18,6 +19,15 @@
     transform: translate(-50%, -50%);
    }
 
+   .textleft {
+    text-align: left;
+    display: inline-block;
+   }
+
+   .textcontainer {
+    text-align: center;
+   }
+
    .row {
     display: flex;
    }
@@ -30,32 +40,36 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="column">
-        <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" style="width:100%">
+<div class="container">    
+    <div class="row">
+        <div class="column">
+            <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/Delphinium.JPG" alt="Delphinium" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/CrochetPurse.JPG" alt="Crochet Flower Purse" style="width:100%">
+        </div>
     </div>
-    <div class="column">
-        <img src="img/Delphinium.JPG" alt="Delphinium" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="img/CrochetPurse.JPG" alt="Crochet Flower Purse" style="width:100%">
+
+    <div class="centered">
+        <h1>Sobia's Portfolio :&#41;</h1>
     </div>
 </div>
 
+<div class="textcontainer">
+    <div class="textleft">
+        <h2>About Me</h2>
+        <p>Me...</p>
 
-    
+        <h2>My Projects</h2>
+        <p>Projects...</p>
 
-<h2>About Me</h2>
-<p>Me...</p>
-
-<h2>My Projects</h2>
-<p>Projects...</p>
-
-<h2>My Experience</h2>
-<p>Experience...</p>
-<!-- <div class="centered">
-        <h1>Sobia's Portfolio :&#41;</h1>
-    </div> -->
+        <h2>My Experience</h2>
+        <p>Experience...</p>
+    </div>
+</div>
 
 </body>
 </html>

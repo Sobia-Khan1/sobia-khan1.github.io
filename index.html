@@ -25,8 +25,9 @@
    .header {
     overflow: hidden;
     background-color: #FFF5EE;
-    padding:20px;
+    padding:50px;
     font-family: "Playfair Display";
+    border-radius: 5px;
    }
 
    .header links {
@@ -41,6 +42,22 @@
 
    .header-right {
     float: right;
+   }
+
+   .outerbox {
+    background-color: #C3AED6;
+    padding: 10px;
+   }
+
+   .innerbox {
+    outline: 0.5rem solid #FFF5EE;
+    background-color: #C3AED6;
+    border-radius: 0.5rem;
+    /* font: bold 3rem "Playfair Display";; */
+    margin: 2rem;
+    padding: 4rem;
+    outline-offset: 0.5rem;
+    text-align: center
    }
 
    .container {
@@ -84,13 +101,13 @@
 
 <div class="header">
     <div class="header-right">
-        <links href="about-me">About Me</links>
-        <links href="my-experience">My Experience</links>
-        <links href="my-projects">My Projects</links>
+        <links href="#about-me">About Me</links>
+        <links href="#my-experience">My Experience</links>
+        <links href="#my-projects">My Projects</links>
     </div>
 </div>
 
-<div class="container">    
+<!-- <div class="container">    
     <div class="row">
         <div class="column">
             <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" style="width:100%">
@@ -106,7 +123,14 @@
     <div class="centered">
         <h1>Sobia's Portfolio :&#41;</h1>
     </div>
+</div> -->
+
+<div class="outerbox">
+    <div class="innerbox">
+        <h1>Sobia's Portfolio :&#41;</h1>    
+    </div>
 </div>
+
 
 <div class="textcontainer">
     <div class="textleft">

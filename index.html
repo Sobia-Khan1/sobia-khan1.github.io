@@ -22,7 +22,14 @@
     font-size:3vw;
     font-family: "Playfair Display";
     font-weight: normal;
-    padding: 5px;
+    padding: 10px;
+   }
+
+   div {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+
    }
 
    .header {
@@ -70,7 +77,7 @@
     position: relative;
     text-align: center;
     color: white;
-    padding: 5px
+    padding: 5px;
    }
 
    .centered {
@@ -98,8 +105,28 @@
    }
 
    .column {
-    flex: 33.33%;
-    padding: 5px;
+    margin-top: 1vh; 
+    margin-right: 1vw;
+   }
+
+   .left {
+    width: 50%;
+   }
+
+   .middle, .right{
+    width: 25%;
+   }
+
+   .crop-sq {
+  	height: 10vh;
+    object-fit: cover;
+    object-position: 50% 50%; 
+   }
+    
+   .crop-long {
+  	height: 21vh;
+    object-fit: cover;
+    object-position: 50% 50%; 
    }
 </style>
 
@@ -114,65 +141,49 @@
     </div>
 </div>
 
-<!-- <div class="container">    
-    <div class="row">
-        <div class="column">
-            <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="img/Delphinium.JPG" alt="Delphinium" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="img/CrochetPurse.JPG" alt="Crochet Flower Purse" style="width:100%">
-        </div>
-    </div>
-
-    <div class="centered">
-        <h1>Sobia's Portfolio :&#41;</h1>
-    </div>
-</div> -->
-
-<!-- <div class="textcontainer">
-    <div class="textleft">
-        <h2 id="about-me">About Me</h2>
-        <p>Me...</p>
-
-        <h2 id="my-experience">My Experience</h2>
-        <p>Experience...</p>
-
-        <h2 id="my-projects">My Projects</h2>
-        <p>Projects...</p>
-    </div>
-</div> -->
-
 <div class="outerbox">
     <div class="innerbox">
         <h1>Sobia's Portfolio :&#41;</h1>    
     </div>
 </div>
 
-<div style="background-color: #E6E6FA; margin-top: 0; margin-bottom: 0;">
-    <h2 id="about-me">About Me</h2>
-    <p>Me...</p>
+<div style="background-color: #E6E6FA;">
+    <div class="row">
+        <div class="column left">
+            <h2 id="about-me">About Me</h2>
+            <p>Me...</p>
+        </div>
+        <div class="column middle">
+            <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" class="crop-long">
+        </div>
+        <div class="column right">
+            <div class="row" style="margin-bottom:1vh">
+                <img src="img/Delphinium.JPG" alt="Delphinium" class="crop-sq">
+            </div>
+            <div class="row">
+                <img src="img/CrochetPurse.JPG" alt="Crochet Flower Purse" class="crop-sq">
+            </div>
+        </div>
+    </div>
 </div>
 
-<div style="background-color: #F5E0E0; margin-top: 0; margin-bottom: 0;">
+<div style="background-color: #F5E0E0;">
     <h2 id="my-experience" style="text-align: center;">My Experience</h2>
     <div class="row">
-        <div class="column">
-            <div style="background-color: #D3D3D3; border-radius: 5px; padding: 5px;">Experience 1</div>
+        <div class="column" style="flex:33.33%">
+            <div style="background-color: #FFF5EE; border-radius: 5px; padding: 5px;">Experience 1</div>
         </div>
-        <div class="column">
-            <div style="background-color: #D3D3D3; border-radius: 5px; padding: 5px;">Experience 2</div>
+        <div class="column" style="flex:33.33%">
+            <div style="background-color: #FFF5EE; border-radius: 5px; padding: 5px;">Experience 2</div>
         </div>
-        <div class="column">
-            <div style="background-color: #D3D3D3; border-radius: 5px; padding: 5px;">Experience 3</div>
+        <div class="column" style="flex:33.33%">
+            <div style="background-color: #FFF5EE; border-radius: 5px; padding: 5px;">Experience 3</div>
         </div>
     </div>
     <p>Experience...</p>
 </div>
 
-<div style="background-color: #E6E6FA; margin-top: 0; margin-bottom: 0;">
+<div style="background-color: #E6E6FA;">
     <h2 id="my-projects" style="text-align: center;">My Projects</h2>
     <p>Projects...</p>
 </div>

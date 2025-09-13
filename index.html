@@ -31,15 +31,16 @@
     border-radius: 5px;
    }
 
-   .header links {
-    float: left;
+   .header a {
     color: black;
     text-align: center;
-    font-size:2vw;
+    font-size:1vw;
+    margin: 0px 20px
    }
 
-   .header links:hover {
+   .header a:hover {
     background-color: #D3D3D3;
+    padding: 10px;
    }
 
    .header-right {
@@ -93,7 +94,8 @@
    }
 
    .column {
-    flex: 33.33%
+    flex: 33.33%;
+    padding: 5px;
    }
 </style>
 
@@ -102,9 +104,9 @@
 
 <div class="header">
     <div class="header-right">
-        <links href="#about-me">About Me</links>
-        <links href="#my-experience">My Experience</links>
-        <links href="#my-projects">My Projects</links>
+        <a href="#about-me">About Me</a>
+        <a href="#my-experience">My Experience</a>
+        <a href="#my-projects">My Projects</a>
     </div>
 </div>
 
@@ -126,14 +128,7 @@
     </div>
 </div> -->
 
-<div class="outerbox">
-    <div class="innerbox">
-        <h1>Sobia's Portfolio :&#41;</h1>    
-    </div>
-</div>
-
-
-<div class="textcontainer">
+<!-- <div class="textcontainer">
     <div class="textleft">
         <h2 id="about-me">About Me</h2>
         <p>Me...</p>
@@ -144,7 +139,40 @@
         <h2 id="my-projects">My Projects</h2>
         <p>Projects...</p>
     </div>
+</div> -->
+
+<div class="outerbox">
+    <div class="innerbox">
+        <h1>Sobia's Portfolio :&#41;</h1>    
+    </div>
 </div>
+
+<div style="background-color: #E6E6FA;">
+    <h2 id="about-me">About Me</h2>
+    <p>Me...</p>
+</div>
+
+<div style="background-color: #F5E0E0;">
+    <h2 id="my-experience">My Experience</h2>
+    <div class="row">
+        <div class="column">
+            <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/Delphinium.JPG" alt="Delphinium" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/CrochetPurse.JPG" alt="Crochet Flower Purse" style="width:100%">
+        </div>
+    </div>
+    <p>Experience...</p>
+</div>
+
+<div style="background-color: #E6E6FA;">
+    <h2 id="my-projects">My Projects</h2>
+    <p>Projects...</p>
+</div>
+
 
 </body>
 </html>

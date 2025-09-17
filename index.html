@@ -42,6 +42,7 @@
 
    button {
     outline: 0.3vw solid #D3D3D3; 
+    background-color: #E6E6FA;
     border-radius: 5px; 
     margin: 0 0 1vh 1vw;
     text-align: center; 
@@ -207,7 +208,7 @@
         <div class="row">
             <div class="column" style="flex:25%">
                 <button onclick="openProjectPopUp()">
-                    <b>SpeakEasy SDK</b> (Capstone)
+                    SpeakEasy SDK (Capstone)
                 </button>
             </div>
             <div class="projectPopUp" id="project">
@@ -273,6 +274,7 @@
 <script>
     function openProjectPopUp() {
         const project = document.getElementById("project");
+        console.log("button clicked");
         // project.style.visibility = project.style.visibility === "visible" ? "hidden" : "visible";
 
         if (project.style.visibility === "visible") {

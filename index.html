@@ -47,6 +47,7 @@
     margin: 0 0 1vh 1vw;
     text-align: center; 
     font-size: 2vw;
+    font-family: 'Didact Gothic';
    }
 
    .header {
@@ -125,14 +126,13 @@
 
    .projectPopUp {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     z-index: 1000;
     visibility: hidden;
     background-color: #D3D3D3;
     border-radius: 5px;
-    height: 100%;     
+    width: 100%;     
    }
 </style>
 
@@ -275,7 +275,6 @@
     function openProjectPopUp() {
         const project = document.getElementById("project");
         console.log("button clicked");
-        // project.style.visibility = project.style.visibility === "visible" ? "hidden" : "visible";
 
         if (project.style.visibility === "visible") {
             project.style.visibility = "hidden";

@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sobia's Portfolio</title>
@@ -30,12 +31,21 @@
    p {
     margin: 1vh 1vw;
     font-size: 1.5vw;
+    font-family: 'Didact Gothic';
    }
 
    div {
     /* margin-top: 0px;
     margin-bottom: 0px; */
     margin: 0 0 0 0;
+   }
+
+   button {
+    outline: 0.3vw solid #D3D3D3; 
+    border-radius: 5px; 
+    margin: 0 0 1vh 1vw;
+    text-align: center; 
+    font-size: 2vw;
    }
 
    .header {
@@ -111,6 +121,18 @@
     object-fit: cover;
     object-position: 50% 50%; 
    }
+
+   .projectPopUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #D3D3D3;
+    border-radius: 5px;
+    height: 100%;     
+   }
 </style>
 
 </head>
@@ -135,16 +157,8 @@
         <div class="column left">
             <div class="container">
                 <h2 id="about-me">About Me</h2>
-                <p>Hi, I'm Sobia and this is my Portfolio!............................................................................
-                    .....................................................</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
-                <p>...</p>
+                <p>Hi, My name is Sobia! I have a bachelor’s degree in Software Engineering and I minored in Mechatronics.</p> 
+                <p>In my free time I like hiking to waterfalls, reading and crocheting.  One of my favourite books is The Candle and the Flame by Nafiza Azad. The top right picture is a purse I crocheted using individual crocheted flowers.</p>
             </div>
         </div>
         <div class="column middle">
@@ -192,12 +206,18 @@
     <h2 id="my-projects">My Projects</h2>
         <div class="row">
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 1</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button onclick="openProjectPopUp()">
+                    <b>SpeakEasy SDK</b> (Capstone)
+                </button>
             </div>
+            <div class="projectPopUp" id="project">
+                <p>
+                    Test
+                </p>
+                <button onclick="openProjectPopUp()"> 
+                    Close
+                </button>
+            </div> 
             <div class="column" style="flex:25%">
                 <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
                     <p>Project 2</p>
@@ -207,9 +227,7 @@
             </div>
             <div class="column" style="flex:25%">
                 <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 3</p>
-                    <p>...</p>
-                    <p>...</p>
+                    <img src="img/GER.png" alt="Marble Canyon">
                 </div>
             </div>
             <div class="column" style="flex:25%">
@@ -251,5 +269,21 @@
             </div>
         </div>
 </div>
+
+<script>
+    function openProjectPopUp() {
+        const project = document.getElementById("project");
+        // project.style.visibility = project.style.visibility === "visible" ? "hidden" : "visible";
+
+        if (project.style.visibility === "visible") {
+            project.style.visibility = "hidden";
+        }
+        else {
+            project.style.visibility = "visible";
+        }
+    }
+</script>
+
+
 </body>
 </html>

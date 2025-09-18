@@ -1,141 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sobia's Portfolio</title>
-
-<style>
-    img {
-    border-radius: 5px;
-    width: 100%;
-   }
-
-    h1 {
-    font-size: 6vw;
-    font-family: "Playfair Display";
-    font-weight: normal;
-   }
-
-    h2 {
-    font-size:3vw;
-    font-family: "Playfair Display";
-    font-weight: normal;
-    /* padding: 1vh; */
-    margin: 1vh 1vw;
-    text-align: center;
-   }
-
-   p {
-    margin: 1vh 1vw;
-    font-size: 1.5vw;
-    font-family: 'Didact Gothic';
-   }
-
-   div {
-    /* margin-top: 0px;
-    margin-bottom: 0px; */
-    margin: 0 0 0 0;
-   }
-
-   button {
-    outline: 0.3vw solid #D3D3D3; 
-    background-color: #E6E6FA;
-    border-radius: 5px; 
-    margin: 0 0 1vh 1vw;
-    text-align: center; 
-    font-size: 2vw;
-    font-family: 'Didact Gothic';
-    border: none;
-   }
-
-   .header {
-    overflow: hidden;
-    background-color: #FFF5EE;
-    padding: 20px;
-    font-family: "Playfair Display";
-    border-radius: 5px;
-   }
-
-   .header a {
-    color: black;
-    text-align: center;
-    font-size: 2vw;
-    margin: 0px 20px;
-    text-decoration: none;
-   }
-
-   .header a:hover {
-    background-color: #D3D3D3;
-    padding: 10px;
-    border-radius: 2px;
-   }
-
-   .header-right {
-    float: right;
-   }
-
-   .outerbox {
-    background-color: #C3AED6;
-    padding: 10px;
-   }
-
-   .innerbox {
-    outline: 0.5rem solid #FFF5EE;
-    background-color: #C3AED6;
-    border-radius: 0.5rem;
-    margin: 2rem;
-    padding: 4rem;
-    outline-offset: 0.5rem;
-    text-align: center
-   }
-
-   .row {
-    display: flex;
-   }
-
-   .column {
-    margin-top: 1vh; 
-    margin-right: 1vw;
-   }
-
-   .left {
-    width: 50%;
-   }
-
-   .middle, .right{
-    width: 25%;
-   }
-
-   .container {
-    margin: 0;
-   }
-
-   .crop-sq {
-  	height: 50vh;
-    object-fit: cover;
-    object-position: 50% 50%; 
-   }
-    
-   .crop-long {
-  	height: 101vh;
-    object-fit: cover;
-    object-position: 50% 50%; 
-   }
-
-   .projectPopUp {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 1000;
-    visibility: hidden;
-    background-color: #D3D3D3;
-    border-radius: 5px;
-    width: 70%;  
-   }
-</style>
 
 </head>
 <body>
@@ -148,8 +20,8 @@
     </div>
 </div>
 
-<div class="outerbox">
-    <div class="innerbox">
+<div class="outer-box">
+    <div class="inner-box">
         <h1>Sobia's Portfolio :&#41;</h1>    
     </div>
 </div>
@@ -157,11 +29,9 @@
 <div style="background-color: #E6E6FA;">
     <div class="row">
         <div class="column left">
-            <div class="container">
-                <h2 id="about-me">About Me</h2>
-                <p>Hi, My name is Sobia! I have a bachelor’s degree in Software Engineering and I minored in Mechatronics.</p> 
-                <p>In my free time I like hiking to waterfalls, reading and crocheting.  One of my favourite books is The Candle and the Flame by Nafiza Azad. The top right picture is a purse I crocheted using individual crocheted flowers.</p>
-            </div>
+            <h2 id="about-me">About Me</h2>
+            <p>Hi, My name is Sobia! I have a bachelor's degree in Software Engineering and I minored in Mechatronics.</p>
+            <p>In my free time I like hiking to waterfalls, reading and crocheting.  One of my favourite books is The Candle and the Flame by Nafiza Azad. The top right picture is a purse I crocheted using individual crocheted flowers.</p>
         </div>
         <div class="column middle">
             <img src="img/MarbleCanyon.JPG" alt="Marble Canyon" class="crop-long">
@@ -207,85 +77,122 @@
 <div style="background-color: #E6E6FA; padding-top: 1px;">
     <h2 id="my-projects">My Projects</h2>
         <div class="row">
-            <div class="column" style="flex:25%">
-                <button onclick="openProjectPopUp()">
-                    SpeakEasy SDK (Capstone)
+            <div class="column" style="flex:25%;">
+                <button class="prj-btn" onclick="openProjectPopUp(1)">
+                    <b>SpeakEasy SDK</b> (Capstone)
                 </button>
             </div>
-            <div class="projectPopUp" id="project">
+            <div class="projectPopUp">
                 <p>
                     Test
                 </p>
-                <button onclick="openProjectPopUp()"> 
+                <button class="close-btn" onclick="openProjectPopUp(1)">
                     Close
                 </button>
             </div> 
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 2</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(2)">
+                    <b>QUBE Servo-2</b> Projects
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(2)">
+                    Close
+                </button>
             </div>
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <img src="img/GER.png" alt="Marble Canyon">
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(3)">
+                    <img src="img/GER.png" alt="GoodEnoughReads">
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <img style="float: left; width:25%; margin: 1vh 0 0 1vw;" src="img/GER.png" alt="GoodEnoughReads">
+                <h2 class="prj-h2">GoodEnoughReads</h2>
+                <p style=" margin-left: 18vw; margin-top:2vh">
+                    GoodEnoughReads is a website designed to allow a user to track their books and reading stats.
+                    They can log in, add books they've read to their account and add different reading stats such
+                    as minutes read and pages read.
+                </p>
+                <p style=" margin-left: 18vw;">
+                    The website is built using Python Django.
+                </p>
+                <button >
+                <button class="close-btn" onclick="openProjectPopUp(3)">
+                    Close
+                </button>
             </div>
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 4</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(4)">
+                    <b>Movie Theatre</b> App
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(4)">
+                    Close
+                </button>
             </div>
         </div>
         <div class="row">
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 5</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(5)">
+                    <b>Movie Clinic</b> App
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(5)">
+                    Close
+                </button>
             </div>
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 6</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(6)">
+                    <b>Microchip PIC 24F Microcontroller</b> Projects
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(6)">
+                    Close
+                </button>
             </div>
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 7</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(7)">
+                    <b>Arduino Microcontroller</b> Projects
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(7)">
+                    Close
+                </button>
             </div>
             <div class="column" style="flex:25%">
-                <div style="outline: 0.3vw solid #D3D3D3; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                    <p>Project 8</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div>
+                <button class="prj-btn" onclick="openProjectPopUp(8)">
+                    Sample <b>Food Bank</b>
+                </button>
+            </div>
+            <div class="projectPopUp">
+                <p>
+                    Test
+                </p>
+                <button class="close-btn" onclick="openProjectPopUp(8)">
+                    Close
+                </button>
             </div>
         </div>
 </div>
-
-<script>
-    function openProjectPopUp() {
-        const project = document.getElementById("project");
-        console.log("button clicked");
-
-        if (project.style.visibility === "visible") {
-            project.style.visibility = "hidden";
-        }
-        else {
-            project.style.visibility = "visible";
-        }
-    }
-</script>
-
 
 </body>
 </html>

@@ -20,11 +20,13 @@
     </div>
 </div>
 
-<div class="outer-box">
+<div class="outer-box" id="title-box" onclick="titleAnimation(event)">
     <div class="inner-box">
         <h1>Sobia's Portfolio :&#41;</h1>    
     </div>
 </div>
+
+<script src="main.js"></script>
 
 <div style="background-color: #E6E6FA;">
     <div class="row">
@@ -51,24 +53,24 @@
     <h2 id="my-experience">My Experience</h2>
     <div class="row">
         <div class="column" style="flex:33.33%">
-            <div style="background-color: #FFF5EE; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                <p>Experience 1</p>
-                <p>...</p>
-                <p>...</p>
+            <div class="exp-box">
+                Undergraduate <b>Student Researcher</b>
+                <br />
+                <br />University of Calgary, Cumming School of Medicine
             </div>
         </div>
         <div class="column" style="flex:33.33%">
-            <div style="background-color: #FFF5EE; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                <p>Experience 2</p>
-                <p>...</p>
-                <p>...</p>
+            <div class="exp-box">
+                <b>PASS Leader</b>
+                <br />
+                <br />University of Calgary, Student Success Centre
             </div>
         </div>
         <div class="column" style="flex:33.33%">
-            <div style="background-color: #FFF5EE; border-radius: 5px; margin: 0 0 1vh 1vw;">
-                <p>Experience 3</p>
-                <p>...</p>
-                <p>...</p>
+            <div class="exp-box">
+                <b>Quality Assurance</b> Intern
+                <br />
+                <br />Computer Modelling Group
             </div>
         </div>
     </div>
@@ -119,7 +121,7 @@
                 <p style=" margin-left: 18vw;">
                     The website is built using Python Django.
                 </p>
-                <button >
+                <button> </button>
                 <button class="close-btn" onclick="openProjectPopUp(3)">
                     Close
                 </button>

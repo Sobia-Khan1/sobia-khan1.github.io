@@ -23,9 +23,27 @@ p {
     font-family: 'Didact Gothic';
 }
 
-/*div {*/
-/*    margin: 0 0 0 0;*/
-/*}*/
+sparkle {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    transition: background-color 2s ease-in;
+    pointer-events: none;
+}
+
+.exp-box {
+    background-color: #FFF5EE;
+    border-radius: 5px;
+    margin: 0 0 1vh 1vw;
+    padding:1vh 1vw 1vh 1vw;
+    height:30vh;
+    /*align-items: center;*/
+    /*display: flex;*/
+    text-align:center;
+    font-family: 'Didact Gothic';
+}
 
 .prj-btn {
     outline: 0.6vw solid #D3D3D3;
@@ -101,7 +119,6 @@ p {
 
 .inner-box {
     outline: 0.5rem solid #FFF5EE;
-    background-color: #C3AED6;
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 4rem;

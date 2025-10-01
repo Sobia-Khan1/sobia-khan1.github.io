@@ -1,4 +1,5 @@
 var x = 1
+var open = false
 
 function titleAnimation(event) {
     // if (x%2 === 1)
@@ -25,10 +26,12 @@ function openProjectPopUp(prjNum) {
     const project = document.getElementsByClassName("projectPopUp")[prjNum-1];
     console.log("button clicked");
 
-    if (project.style.visibility === "visible") {
-        project.style.visibility = "hidden";
-    }
-    else {
-        project.style.visibility = "visible";
-    }
+        if (project.style.visibility === "visible") {
+            project.style.visibility = "hidden";
+            open = false;
+        }
+        else if (open === false) {
+            project.style.visibility = "visible";
+            open = true;
+        }
 }

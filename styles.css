@@ -33,16 +33,42 @@ sparkle {
     pointer-events: none;
 }
 
+table, th, td {
+    border: none;
+}
+
+
 .exp-box {
     background-color: #FFF5EE;
     border-radius: 5px;
     margin: 0 0 1vh 1vw;
     padding:1vh 1vw 1vh 1vw;
-    height:30vh;
-    /*align-items: center;*/
+    height:20vw;
     /*display: flex;*/
+    /*align-items: center;*/
     text-align:center;
     font-family: 'Didact Gothic';
+    font-size: 2vw;
+    white-space: pre-line;
+}
+
+.git-btn {
+    text-align:center;
+    font-family: 'Didact Gothic';
+    background-color: #FFF5EE;
+    border-radius: 5px;
+    margin: 2vh 2vw;
+    padding: 5px 15px;
+    /*float: left;*/
+    border: none;
+    outline: 0.6vw solid #FFF5EE;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 15vw;
+}
+
+.git-btn:hover {
+    background-color: #D3D3D3;
 }
 
 .prj-btn {
@@ -64,7 +90,7 @@ sparkle {
 
 .prj-h2 {
     padding-top:5vh;
-    margin-left: 18vw;
+    /*margin-left: 18vw;*/
     text-align: left;
     border-bottom: 3px solid #000;
 }
@@ -74,7 +100,7 @@ sparkle {
     background-color: #D3D3D3;
     border-radius: 5px;
     text-align: center;
-    /*font-size: 1vw;*/
+    font-size: 2vw;
     font-family: 'Didact Gothic';
     border: none;
     float: right;

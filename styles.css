@@ -58,13 +58,13 @@ table, th, td {
     background-color: #FFF5EE;
     border-radius: 5px;
     margin: 2vh 2vw;
-    padding: 5px 15px;
+    padding: 1vh 1vw;
     /*float: left;*/
     border: none;
     outline: 0.6vw solid #FFF5EE;
     font-weight: bold;
     font-size: 2vw;
-    width: 15vw;
+    width: 12vw;
 }
 
 .git-btn:hover {
